@@ -98,6 +98,7 @@ function App() {
         <span>{poet}</span>
       </h1>
       <TextField key={'sonnet'} sonnet={sonnet} setSonnet={setSonnet} text={text} updateText={updateText}/>
+      <footer>This app was created by <a href="https://github.com/scwdev/Billy-Writes-Good" target="_blank">Noam Blanks</a></footer>
     </div>
   );
 }

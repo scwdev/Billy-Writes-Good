@@ -37,7 +37,7 @@ const TextField = ({ sonnet, setSonnet, updateText }) => {
                 <>
                     {line.map((word, index) => (
                         <Button
-                            key={word+"-"+index} word={word} line={lineNum} index={index}
+                            key={word+"-"+index} word={word} line={lineNum+1} index={index}
                             handleClick={() => {handleClick(lineNum+1, index)}}
                         />
                     ))}
@@ -49,7 +49,7 @@ const TextField = ({ sonnet, setSonnet, updateText }) => {
     }
 
     return (
-        <div>
+        <div className="sonnet-container">
             {/* <h2>{count?.numSyllables}</h2> */}
             <main className="sonnet" >
                 {displaySonnet()}
