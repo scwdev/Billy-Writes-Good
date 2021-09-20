@@ -93,7 +93,10 @@ function App() {
 
   return (
     <div className="App">
-      <h1>A Poem by {poet}:</h1>
+      <h1>
+        A Poem by <br/>
+        <span>{poet}</span>
+      </h1>
       <TextField key={'sonnet'} sonnet={sonnet} setSonnet={setSonnet} text={text} updateText={updateText}/>
     </div>
   );
