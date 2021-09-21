@@ -9,20 +9,20 @@ function App() {
   const [ text, setText ] = useState([])
   const [ sonnet, setSonnet ] = useState(
     {
-      1: [],
-      2: [],
-      3: [],
-      4: [],
-      5: [],
-      6: [],
-      7: [],
-      8: [],
-      9: [],
-      10: [],
-      11: [],
-      12: [],
-      13: [],
-      14: []
+      1: [""],
+      2: [""],
+      3: [""],
+      4: [""],
+      5: [""],
+      6: [""],
+      7: [""],
+      8: [""],
+      9: [""],
+      10: [""],
+      11: [""],
+      12: [""],
+      13: [""],
+      14: [""]
     }
   )
   const [ poet, setPoet ] = useState("")
@@ -97,7 +97,7 @@ function App() {
         A Poem by <br/>
         <span onClick={() => {getPoet()}}>{poet}</span>
       </h1>
-      <TextField key={'sonnet'} sonnet={sonnet} setSonnet={setSonnet} text={text} updateText={updateText}/>
+      {sonnet[1][0] !== undefined ? <TextField key={'sonnet'} sonnet={sonnet} setSonnet={setSonnet} text={text} updateText={updateText}/> : "Scribbling..."}
       <footer>This app was created by <a href="https://github.com/scwdev/Billy-Writes-Good" target="_blank">Noam Blanks</a></footer>
     </div>
   );
