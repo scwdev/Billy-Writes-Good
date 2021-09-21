@@ -17,7 +17,7 @@ const Button = ({ word, handleClick, index, line }) => {
     }
  
     return (
-        <button className={"line-"+line} onClick={handleClick} >{capitalizer(word)}</button>
+        <button className={"line-"+line} onClick={handleClick} >{capitalizer(word)}&nbsp;</button>
     )
 }
 
