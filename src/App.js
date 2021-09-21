@@ -95,7 +95,7 @@ function App() {
     <div className="App">
       <h1>
         A Poem by <br/>
-        <span>{poet}</span>
+        <span onClick={() => {getPoet()}}>{poet}</span>
       </h1>
       <TextField key={'sonnet'} sonnet={sonnet} setSonnet={setSonnet} text={text} updateText={updateText}/>
       <footer>This app was created by <a href="https://github.com/scwdev/Billy-Writes-Good" target="_blank">Noam Blanks</a></footer>
